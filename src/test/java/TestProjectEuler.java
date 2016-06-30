@@ -11,23 +11,9 @@ import static org.junit.Assert.assertEquals;
 
 public class TestProjectEuler {
 
-    Problem4 p1 = new Problem4();
-
     @Test
     public void testProbem1ReturnsAnswer() {
         assertEquals(233168, new Problem1().start());
-    }
-
-    @Test
-    public void testProblem2ReturnsFibonacciNumbersBetween1and10() {
-        ArrayList<Integer> result = new ArrayList<Integer>();
-        result.add(1);
-        result.add(2);
-        result.add(3);
-        result.add(5);
-        result.add(8);
-        assertEquals(result,Problem2.start());
-
     }
 
     /**
@@ -61,6 +47,12 @@ public class TestProjectEuler {
     @Test
     public void testNumberDivisibleByAllReturnsTrue() {
         assertTrue(Problem5.isNumberDivisibleby1to20(232792560));
+
+    }
+
+    @Test
+    public void testFirst100NumberDifference() {
+        assertEquals(25164150,Problem6.start());
 
     }
 }
