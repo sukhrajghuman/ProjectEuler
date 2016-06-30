@@ -13,5 +13,5 @@ public class TestProjectEuler {
     public void testProbem1ReturnsAnswer() {
         assertEquals(233168, new Problem1().run());
     }
-    
+
 }
