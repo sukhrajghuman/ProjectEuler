@@ -47,4 +47,20 @@ public class TestProjectEuler {
         int a=912;
         assertFalse(Problem4.isNumberPalindrome(a));
     }
+
+    /**
+     * Problem 5. Tests to see if number not divisible
+     * by all numbers in 1 to 20 returns false.
+     */
+    @Test
+    public void testIfNumberNotDivisibleByAllReturnsFalse() {
+        assertFalse(Problem5.isNumberDivisibleby1to20(500));
+
+    }
+
+    @Test
+    public void testNumberDivisibleByAllReturnsTrue() {
+        assertTrue(Problem5.isNumberDivisibleby1to20(232792560));
+
+    }
 }
