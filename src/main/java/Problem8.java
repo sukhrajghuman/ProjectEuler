@@ -10,13 +10,15 @@ public class Problem8 {
     }
 
     public static long start(String a){
+        // first split string into int array so we can sort through it.
         int[] result = new int[a.length()];
         for (int k=0; k<a.length();k++){
             result[k]=Integer.parseInt(String.valueOf(a.charAt(k)));
         }
 
         long largestProduct = 0;
-
+        //then take product of 13 ints at a time moving up in index one by one from
+        //the outside loop.
         for (int i=0;i+13 <= a.length();i++) {
             long product = 1;
             for (int j = i; j <= i+ 12; j++) {

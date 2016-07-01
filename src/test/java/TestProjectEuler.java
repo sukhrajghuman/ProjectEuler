@@ -55,4 +55,15 @@ public class TestProjectEuler {
         assertEquals(25164150,Problem6.start());
     }
 
+    @Test
+    public void testPythagTriadWorks() {
+        assertTrue(Problem9.isItAPythagoreanTriplet(3,4,5));
+
+    }
+
+    @Test
+    public void testNonPythagTriadReturnsFalse() {
+        assertFalse(Problem9.isItAPythagoreanTriplet(3,4,6));
+
+    }
 }
