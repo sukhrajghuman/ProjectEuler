@@ -53,6 +53,6 @@ public class TestProjectEuler {
     @Test
     public void testFirst100NumberDifference() {
         assertEquals(25164150,Problem6.start());
-
     }
+
 }

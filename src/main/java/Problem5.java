@@ -8,10 +8,10 @@ public class Problem5 {
     }
 
     public static int start(){
-        int a=1;
+        int a=20;
         //I'm not so happy with this. It works, but is very inefficient;
         while (!isNumberDivisibleby1to20(a)){
-            a++;
+            a=a+20;
         }
         return a;
     }
